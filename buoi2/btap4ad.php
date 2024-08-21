@@ -1,7 +1,6 @@
-<?php
-// file: index.php
 
-// Bao gồm file btap4.php để sử dụng các hàm xử lý mảng
+
+<?php
 require 'btap4.php';
 
 $numbers = [];
@@ -33,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array Functions</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -43,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="numbers">Nhập mảng:</label>
         <br>
         <br>
-        <input type="text" id="numbers" name="numbers" placeholder="e.g: 3,5,2,8,1" required>
+        <input type="text" id="numbers" name="numbers" placeholder="e.g: 4,9,5,6,8" required>
         <br>
         <br>
         <label for="search_value">Giá trị cần tìm kiếm:</label>
