@@ -88,6 +88,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php endif; ?>
         </table>
     <?php endif; ?>
-
+    <button><a class="back" href="javascript:history.back()">Back</a></button>
 </body>
 </html>
