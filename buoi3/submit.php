@@ -29,7 +29,7 @@
 
         .output h4 {
             font-size: 24px;
-            color: #08A045;
+            color: yellow;
             margin-bottom: 10px;
         }
 
