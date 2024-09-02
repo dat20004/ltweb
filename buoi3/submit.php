@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Result</title>
+    <title>Kết quả</title>
     <style>
         * {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -104,7 +104,7 @@
 
         } else {
             echo '<div class="output">';
-            echo "<h4>Form chưa được gửi thành công. Vui lòng kiểm tra các lỗi sau:</h4>";
+            echo "<h4>Form chưa được gửi thành công. Bạn phải nhập:</h4>";
             foreach ($errors as $error) {
                 echo "<p>$error</p>"."</br>";
             }
