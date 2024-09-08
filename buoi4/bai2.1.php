@@ -181,7 +181,7 @@ if (isset($_SESSION['first_name'])) {
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-    button {
+    .cl {
         width: 100%;
         padding: 10px;
         background-color: #4CAF50;
@@ -192,7 +192,7 @@ if (isset($_SESSION['first_name'])) {
         font-size: 16px;
     }
 
-    button:hover {
+    .cl:hover {
         background-color: green;
     }
 
@@ -298,7 +298,7 @@ if (isset($_SESSION['first_name'])) {
                 <textarea name="additional_info"><?php echo htmlspecialchars($additional_info); ?></textarea>
             </div>
 
-            <button type="submit">Submit</button>
+            <button class="cl"type="submit">Submit</button>
         </form>
 
         <?php if (isset($_SESSION['first_name'])): ?>
@@ -317,6 +317,7 @@ if (isset($_SESSION['first_name'])) {
         </div>
         <?php endif; ?>
     </div>
+    <button><a class="back" href="javascript:history.back()">Back</a></button>   
 </body>
 
 </html>

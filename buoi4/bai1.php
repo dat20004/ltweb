@@ -167,7 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-size: 12px;
         }
 
-        button {
+        .cl {
             width: 100%;
             padding: 10px;
             background-color: #4CAF50;
@@ -178,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-size: 16px;
         }
 
-        button:hover {
+        .cl:hover {
             background-color: #45a049;
         }
 
@@ -270,7 +270,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <textarea name="additional_info"><?php echo htmlspecialchars($additional_info); ?></textarea>
             </div>
 
-            <button type="submit">Submit</button>
+            <button class="cl"type="submit">Submit</button>
         </form>
 
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($errors)): ?>
@@ -289,6 +289,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         <?php endif; ?>
     </div>
+    <button><a class="back" href="javascript:history.back()">Back</a></button>          
 </body>
 
 </html>
